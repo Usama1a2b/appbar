@@ -1,5 +1,6 @@
 package com.example.appbar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         toolbar=findViewById(R.id.appBar);
 
         setSupportActionBar(toolbar);
+
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
